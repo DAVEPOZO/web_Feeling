@@ -1,0 +1,197 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem 0;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #D17C78;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.nav a {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #D17C78;
+}
+
+/* Banner promocional */
+.banner-promocional {
+  background: #ffeaea;
+  color: #b44844;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+/* Intro catálogo */
+.intro-catalogo {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.intro-catalogo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-catalogo p {
+  color: #666;
+}
+
+/* Buscador */
+.buscador {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buscador input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60%;
+  max-width: 400px;
+  margin-right: 0.5rem;
+}
+
+.buscador button {
+  padding: 0.6rem 1.2rem;
+  background-color: #D17C78;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buscador button:hover {
+  background-color: #b95c5a;
+}
+
+/* Catálogo */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.producto h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.etiqueta {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #D17C78;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.etiqueta.oferta {
+  background-color: #fa9f4d;
+}
+
+.etiqueta.nueva {
+  background-color: #4dbf7a;
+}
+
+/* Paginación */
+.paginacion {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.paginacion button {
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.paginacion button.activo,
+.paginacion button:hover {
+  background-color: #D17C78;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer a {
+  color: #D17C78;
+}

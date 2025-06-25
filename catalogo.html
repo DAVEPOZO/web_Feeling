@@ -6,6 +6,8 @@
   <title>Catálogo - Feeling</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="catalogo.css" />
+  <script defer src="catalogo.js"></script>
+  
 </head>
 <body>
   <header class="header">
@@ -35,7 +37,8 @@
       <button>Buscar</button>
     </section>
 
-    <section class="catalogo">
+    <section class="catalogo" id="catalogo">
+
       <!-- Productos -->
       <div class="producto">
         <img src="https://www.floreriasanfelipe.com.mx/images/Canasta%20de%201%20Vista.jpg" alt="Arreglo flor surtida" />
@@ -47,14 +50,13 @@
         <img src="https://ramosdedulces.com/wp-content/uploads/2022/09/ramo-de-flores-con-chocolates-ramosdedulces-dot-com.jpg" alt="Ramo de flores con chocolate" />
         <h3>Ramo de flores con chocolate</h3>
         <p>$</p>
-        <span class="etiqueta nueva">Nuevo</span>
+        
       </div>
 
       <div class="producto">
         <img src="https://cdn.floresdemexico.com/wp-content/uploads/2024/03/1-4-740x740.jpg" alt="Girasoles" />
         <h3>Girasoles</h3>
         <p>$</p>
-        <span class="etiqueta oferta">Oferta</span>
       </div>
 
       <div class="producto">
@@ -67,14 +69,163 @@
         <img src="https://telerosa.com/3190-medium_default/ramo-flores-frescas-temporada-telerosa.jpg" alt="Flores para la ocacion" />
         <h3>Flores para la ocasión</h3>
         <p>$</p>
-        <span class="etiqueta nueva">Nuevo</span>
       </div>
 
       <div class="producto">
         <img src="https://azapflores.com/cdn/shop/files/IMG_5288.png?v=1705098223&width=533" alt="Ramo de rosas rojas" />
         <h3>Ramo de rosas rojas</h3>
         <p>$</p>
-        <span class="etiqueta oferta">Oferta</span>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto1.jpg" alt="Girasoles combinadas" />
+        <h3>Girasoles combinadas</h3>
+        <p>$</p>
+      </div>
+      
+      <div class="producto">
+        <img src="imagen/foto2.jpg" alt="Rosas rojas con Girasoles" />
+        <h3>Rosas rojas con Girasoles</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto3.jpg" alt="Gerberas" />
+        <h3>Gerberas </h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto4.jpg" alt="Rosa rojas preservada" />
+        <h3>Rosa roja preservada</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto5.jpg" alt="rosa blanca preservada" />
+        <h3>Rosa blanca preservada</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto6.jpg" alt="Ramo de rosas azules combinadas" />
+        <h3>Ramo de rosas azules combinadas</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto7.jpg" alt="Arrelos secos" />
+        <h3>Arreglo seco</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto8.jpg" alt="Rosa roja en formas de corazon" />
+        <h3>Rosa roja en forma de corazon</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto9.jpg" alt="Ramo de rosas rojas grande" />
+        <h3>Ramo de rosas rojas grande</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto10.jpg" alt="Ramo rosas narajas combinadas" />
+        <h3>Ramo de rosas narajas combinadas</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto11.jpg" alt="Ramo de rosas blancas combinadas" />
+        <h3>Ramo de rosas blancas combinadas arreglo floral 1</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto12.jpg" alt="Ramo de rosas blancas combinadas" />
+        <h3>Ramo de rosas blancas combinadas arreglo floral 2</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto13.jpg" alt="Ramos para la ocasion" />
+        <h3>Ramos para la ocasion</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto14.jpg" alt="Girasoles con lirios" />
+        <h3>Girasoles con lirios</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto15.jpg" alt="Girasoles con flor de verano" />
+        <h3>Girasoles con flor de verano</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto16.jpg" alt="Gerberas de distintos colores" />
+        <h3>Gerberas con distintos colores</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto17.jpg" alt="Ramos de rosas azules" />
+        <h3>Ramo de rosas azules</h3>
+        <p>$</p>
+      </div>
+
+
+      <div class="producto">
+        <img src="imagen/foto18.jpg" alt="Girasoles combinadas" />
+        <h3>Ramo de rosas rojas</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto19.jpg" alt="Ramo de crisantemo" />
+        <h3>Ramo de crisantemo</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto20.jpg" alt="Ramo de tomos rosado claros" />
+        <h3>Ramo de tomos rosados claros</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto21.jpg" alt="ramo rosado combinada" />
+        <h3>Ramo rosado combinada</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto22.jpg" alt="Ramo de color rosado claro " />
+        <h3>Ramo de color rosado claro</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto23.jpg" alt="Limoniun" />
+        <h3>Limoniun</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto24.jpg" alt="Limoniun" />
+        <h3>Limoniun</h3>
+        <p>$</p>
+      </div>
+
+      <div class="producto">
+        <img src="imagen/foto25.jpg" alt="Gerberas" />
+        <h3>Gerberas</h3>
+        <p>$</p>
       </div>
     </section>
 
@@ -89,9 +240,8 @@
   <footer class="footer">
     <p>&copy; 2025 Feeling</p>
     <p>Síguenos en
-      <a href="#">Instagram</a> |
       <a href="#">Facebook</a> |
-      <a href="#">Twitter</a>
+      <a href="#">Tik Tokr</a>
     </p>
   </footer>
 </body>

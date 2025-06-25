@@ -131,9 +131,17 @@ a {
 
 .producto h3 {
   font-size: 1.1rem;
-  color: #333;
   margin-bottom: 0.5rem;
+  min-height: 48px; /* Esto asegura que el título tenga un alto uniforme */
 }
+
+.producto p {
+  margin-top: auto; /* Esto empuja el precio hacia abajo */
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
 
 /* Galería */
 .galeria {

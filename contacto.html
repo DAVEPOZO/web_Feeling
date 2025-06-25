@@ -6,7 +6,6 @@
   <title>Contacto - Feeling</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="contacto.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header class="header">
@@ -21,61 +20,59 @@
     </div>
   </header>
 
-<main class="container">
-  <div class="contacto-grid">
-    <section class="formulario-contacto">
-      <h2>Déjanos un mensaje</h2>
-      <form id="form-contacto" novalidate>
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" placeholder="Tu nombre" required />
+  <main class="container">
+    <div class="contacto-grid">
+      <section class="formulario-contacto">
+        <h2>Déjanos un mensaje</h2>
 
-        <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" placeholder="Tu correo" required />
+        <form action="https://formsubmit.co/josuepozo2110@gmail.com" method="POST">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required />
 
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" placeholder="Tu teléfono" />
+          <label for="correo">Correo electrónico</label>
+          <input type="email" name="correo" id="correo" placeholder="Tu correo" required />
 
-        <label for="asunto">Asunto</label>
-        <input type="text" id="asunto" placeholder="Asunto del mensaje" required />
+          <label for="telefono">Teléfono</label>
+          <input type="tel" name="telefono" id="telefono" placeholder="Tu teléfono" />
 
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          <label for="asunto">Asunto</label>
+          <input type="text" name="asunto" id="asunto" placeholder="Asunto del mensaje" required />
 
-        <button type="submit">Enviar</button>
-      </form>
-      <p id="respuesta"></p>
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+          <!-- Campos ocultos de Formsubmit -->
+          <input type="hidden" name="_next" value="gracias.html">
+          <input type="hidden" name="_captcha" value="false">
+
+          <button type="submit">Enviar</button>
+        </form>
+
+      </section>
+
+      <section class="info-contacto">
+        <h2>Información de Contacto</h2>
+        <p><strong>Teléfono:</strong> +593969251516</p>
+        <p><strong>Email:</strong> Feelings_roses@hotmail.com</p>
+        <p><strong>Dirección:</strong> Tabacundo, La Playita</p>
+
+        <div class="redes-sociales">
+          <h3>Síguenos</h3>
+          <a href="https://www.facebook.com/share/1EuNdGpvxQ/?mibextid=wwXIfr" target="_blank">Facebook</a> |
+          <a href="https://www.tiktok.com/@pozoalejoraul?_t=ZM-8xUNIfnXehK&_r=1" target="_blank">TikTok</a>
+        </div>
+      </section>
+    </div>
+
+    <section class="mapa">
+      <h2>Ubicación</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.8170622354787!2d-78.21078872503544!3d0.045500899954054895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMDInNDMuOCJOIDc4wrAxMicyOS42Ilc!5e0!3m2!1ses-419!2sec!4v1750819102119!5m2!1ses-419!2sec"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación">
+      </iframe>
     </section>
-
-    <section class="info-contacto">
-      <h2>Información de Contacto</h2>
-      <p><strong>Teléfono:</strong> +593969251516</p>
-      <p><strong>Email:</strong> Feeling@gmail.com</p>
-      <p><strong>Dirección:</strong> Tabacundo, La Playita</p>
-
-      <div class="redes-sociales">
-        <h3>Síguenos</h3>
-        <a href="#">Instagram</a> |
-        <a href="#">Facebook</a> |
-        <a href="#">Twitter</a> |
-        <a href="#">TikTok</a>
-      </div>
-    </section>
-  </div>
-
-  <section class="mapa">
-    <h2>Ubicación</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d682.5228396998284!2d-78.20954976015717!3d0.047664787380530836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1750729910249!5m2!1ses-419!2se"
-      width="100%"
-      height="350"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      title="Mapa de ubicación"
-    ></iframe>
-  </section>
-</main>
+  </main>
 
   <footer class="footer">
     <p>&copy; 2025 Feeling</p>
